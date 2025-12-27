@@ -21,11 +21,16 @@
                <hr>
                <input type="number" placeholder= " password" name="length">
                <br>
-               <button type="submit" class="btn btn-warning">genera</button>
+               <button type="submit" class="btn btn-warning">Generate</button>
         </label>
      
         
     </form> 
+
+    <hr>
+    <h2 class="text-center">Your password is…</h2>
+    <pre class="text-center h1"><?php echo  $password; ?></pre>
+    
 
 
 
