@@ -1,4 +1,14 @@
- 
+ <?php
+    require_once __DIR__ . '/functions.php';
+    if ($password != "") {
+       // mandiamo all'altra pagina il valore della password tramite query string
+         header("Location: ./result.php");
+    }
+
+    session_start();
+
+    $_SESSION['password'] = $password;
+?>
  <?php
  require_once __DIR__ . '/functions.php';
     ?>
